@@ -1,0 +1,13 @@
+# Ignore Python build products
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# Ignore git related stuff
+.git/
+.gitignore
+.pre-commit-config.yaml
