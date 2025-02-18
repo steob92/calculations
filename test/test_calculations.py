@@ -39,8 +39,8 @@ def test_sqrt():
 
 
 # Adding additional tests with numpy
-a_arr = np.random.random(10)
-b_arr = np.random.random(10)
+a_arr = np.random.normal(0, 1, 10)
+b_arr = np.random.normal(0, 1, 10)
 
 
 def test_arrays():
