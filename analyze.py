@@ -1,8 +1,8 @@
 from calculations import *
 import sys
 
-a = sys.argv[1]
-b = sys.argv[2]
+a = float(sys.argv[1])
+b = float(sys.argv[2])
 
 print (f"a = {a}")
 print (f"b = {b}")
