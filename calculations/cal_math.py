@@ -20,6 +20,6 @@ def div(a, b):
 
 @vectorize
 def sqrt(a):
-    if a > 0:
+    if a > 0.0:
         return np_sqrt(a)
-    return 0
+    return 0.0
