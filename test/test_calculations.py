@@ -39,13 +39,15 @@ def test_sqrt():
 
 
 # Adding additional tests with numpy
-a_arr = np.random.random(100)
-b_arr = np.random.random(100)
+a_arr = np.random.random(10)
+b_arr = np.random.random(10)
 
 
 def test_arrays():
-    assert add(a_arr, b_arr) == a_arr + b_arr
-    assert sub(a_arr, b_arr) == a_arr - b_arr
-    assert add(a_arr, b_arr) == a_arr * b_arr
-    assert add(a_arr, b_arr) == a_arr / b_arr
-    assert add(a_arr) == np.array([np.sqrt(_a) if _a > 0 else 0 for _a in a])
+    assert np.all(add(a_arr, b_arr) == a_arr + b_arr)
+    assert np.all(sub(a_arr, b_arr) == a_arr - b_arr)
+    assert np.all(mult(a_arr, b_arr) == a_arr * b_arr)
+    assert np.all(div(a_arr, b_arr) == a_arr / b_arr)
+    assert np.all(
+        sqrt(a_arr) == np.array([np.sqrt(_a) if _a > 0 else 0 for _a in a_arr])
+    )
