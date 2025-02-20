@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calculations"
+version = "0.1.0"
+description = "A short description of your package"
+authors = [
+    { name="me", email="me@me.com" }
+]
+dependencies = [
+    "numpy >= 2.2.3",
+]
+
+[tool.setuptools]
+packages = ["calculations"]
